@@ -40,7 +40,7 @@
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  8883                   // use 8883 for SSL use 1883 for MQTT
-#define AIO_USERNAME    "name"
+#define AIO_USERNAME    "you"
 #define AIO_KEY         "key"
 
 /************ Global State (you don't need to change this!) ******************/
@@ -151,10 +151,10 @@ void alphacallback(char *data, uint16_t len) {
   //digitalWrite(ALPHA, data);
         
       if (strcmp(data, "ON") == 0) {
-         digitalWrite(ALPHA, HIGH); 
+         digitalWrite(BETA, HIGH); 
       }
       if (strcmp(data, "OFF") == 0) {
-         digitalWrite(ALPHA, LOW); 
+         digitalWrite(BETA, LOW); 
       }
 }
 
